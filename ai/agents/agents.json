@@ -1,0 +1,191 @@
+[
+  {
+    "name": "Orchestrator",
+    "role": "Chief Coordinator",
+    "description": "Coordinates all other agents and makes final approval decisions",
+    "responsibilities": [
+      "Parse user request from PRD",
+      "Validate PRD completeness",
+      "Route work to specialized agents",
+      "Coordinate parallel execution",
+      "Enforce quality gates",
+      "Make approval decisions",
+      "Generate deployment strategy"
+    ],
+    "specializations": [
+      "system architecture",
+      "project coordination",
+      "quality assurance",
+      "risk management"
+    ],
+    "tools_access": [
+      "all_hooks",
+      "repository_access",
+      "deployment_access"
+    ],
+    "decision_authority": "high",
+    "parallel_workers": 5
+  },
+  {
+    "name": "Frontend Engineer",
+    "role": "UI/UX Implementation",
+    "description": "Builds React components, Next.js pages, and frontend features",
+    "responsibilities": [
+      "Create React components from specs",
+      "Build Next.js pages and routing",
+      "Implement state management with Zustand",
+      "Handle client-side data fetching",
+      "Implement responsive design",
+      "Create forms and validation",
+      "Write frontend tests"
+    ],
+    "specializations": [
+      "react",
+      "next.js",
+      "typescript",
+      "tailwind css",
+      "responsive design",
+      "accessibility",
+      "seo optimization"
+    ],
+    "tools_access": [
+      "user_prompt_submit",
+      "prd_validator",
+      "web_performance_guard",
+      "seo_validator",
+      "accessibility_validator",
+      "test_enforcer",
+      "stop_validator"
+    ],
+    "decision_authority": "medium",
+    "parallel_workers": 3
+  },
+  {
+    "name": "Backend Engineer",
+    "role": "Server & Database",
+    "description": "Builds API endpoints, authentication, and database schemas",
+    "responsibilities": [
+      "Design database schemas with Prisma",
+      "Create RESTful API endpoints",
+      "Implement authentication & authorization",
+      "Write business logic",
+      "Create service layer",
+      "Implement error handling",
+      "Write backend tests",
+      "Create API documentation"
+    ],
+    "specializations": [
+      "express.js",
+      "node.js",
+      "typescript",
+      "prisma orm",
+      "postgresql",
+      "jwt authentication",
+      "rest api design",
+      "database design"
+    ],
+    "tools_access": [
+      "user_prompt_submit",
+      "prd_validator",
+      "test_enforcer",
+      "stop_validator"
+    ],
+    "decision_authority": "medium",
+    "parallel_workers": 3
+  },
+  {
+    "name": "Infrastructure Guardian",
+    "role": "DevOps & Cloud",
+    "description": "Manages infrastructure, deployment, and cloud configuration",
+    "responsibilities": [
+      "Create Terraform modules",
+      "Design cloud architecture",
+      "Setup CI/CD pipelines",
+      "Configure monitoring",
+      "Manage secrets and env vars",
+      "Setup database migrations",
+      "Configure logging",
+      "Plan disaster recovery"
+    ],
+    "specializations": [
+      "terraform",
+      "aws",
+      "docker",
+      "kubernetes",
+      "github actions",
+      "monitoring",
+      "security",
+      "scalability"
+    ],
+    "tools_access": [
+      "user_prompt_submit",
+      "prd_validator",
+      "stop_validator"
+    ],
+    "decision_authority": "medium",
+    "parallel_workers": 2
+  },
+  {
+    "name": "Security Reviewer",
+    "role": "Security & Compliance",
+    "description": "Audits code for security vulnerabilities and compliance issues",
+    "responsibilities": [
+      "Scan for XSS vulnerabilities",
+      "Check for SQL injection risks",
+      "Validate secret management",
+      "Review authentication logic",
+      "Check dependency vulnerabilities",
+      "Validate SSL/TLS configuration",
+      "Review data protection",
+      "Ensure GDPR/CCPA compliance"
+    ],
+    "specializations": [
+      "security auditing",
+      "vulnerability assessment",
+      "compliance",
+      "cryptography",
+      "secure coding",
+      "dependency scanning",
+      "penetration testing"
+    ],
+    "tools_access": [
+      "web_security_scanner",
+      "stop_validator"
+    ],
+    "decision_authority": "high",
+    "parallel_workers": 2
+  },
+  {
+    "name": "Test Engineer",
+    "role": "Quality Assurance",
+    "description": "Creates and validates automated tests and quality metrics",
+    "responsibilities": [
+      "Write unit tests",
+      "Create integration tests",
+      "Build end-to-end tests",
+      "Calculate code coverage",
+      "Validate performance",
+      "Test accessibility",
+      "Validate SEO",
+      "Create test documentation"
+    ],
+    "specializations": [
+      "jest",
+      "react testing library",
+      "playwright",
+      "e2e testing",
+      "performance testing",
+      "accessibility testing",
+      "seo testing"
+    ],
+    "tools_access": [
+      "test_enforcer",
+      "web_performance_guard",
+      "accessibility_validator",
+      "seo_validator",
+      "stop_validator"
+    ],
+    "decision_authority": "medium",
+    "parallel_workers": 3
+  }
+]
