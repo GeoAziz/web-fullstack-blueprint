@@ -1,2 +1,10 @@
 backend/node_modules
 frontend/node_modules
+PHASE_1_DEVELOPMENT_COMMENCED.md
+PHASE_1_KICKOFF_SUMMARY.md
+PHASE_1_STATUS.md
+completion_roadmap.md
+orchestrator/node_modules/
+frontend/node_modules/
+backend/node_modules/
+.env
